@@ -13,7 +13,7 @@ This repository is part of the Personal Project series for Phase 2. This is 1 of
 
 # API App
 
-The goal of this Personal Project is to build a client side web application. For Rubyists this means you will be basing your project off of the [Sinatra Web App started on this branch](.) and for Sharpies the [ASP.NET MVC app started on this branch](.).
+The goal of this Personal Project is to build an app that uses an API otherwise it is completely open. If you choose to have a back end then for Rubyists this means you will be basing your project off of the [Sinatra Skeleton](../../../sinatra-skeleton-mvc-challenge) and for Sharpies this will mean creating a new ASP.NET MVC app in Visual Studio.
 
 ### Learning Competencies
 
