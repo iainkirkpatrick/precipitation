@@ -1,6 +1,6 @@
 # Personal Projects
 
-This repository is part of the Personal Project series for Phase 2. This is 1 of the 3 Personal Projects for this phase. These projects are intentionally open ended but aim to cover all the Learning Competencies with your project. The instructors are available to answer any questions you have around these projects.
+This repository is part of the Personal Project series for Phase 2. This is 3 of the 3 Personal Projects for this phase. These projects are intentionally open ended but aim to cover all the Learning Competencies with your project. The instructors are available to answer any questions you have around these projects.
 
 ## Submission Process
 
