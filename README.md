@@ -18,7 +18,8 @@ The goal of this Personal Project is to build an app that uses an API otherwise 
 ### Learning Competencies
 
 The things we will be looking to see if you have learned in this project are:
-  - Use a third-party API
+  - **Use a third-party API**
+  - **Testing**
 
 ### User Stories
 
