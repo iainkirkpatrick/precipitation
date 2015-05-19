@@ -1,0 +1,14 @@
+{
+  "name": "PRECIPITATION",
+  "version": "0.0.1",
+  "author": "iainkirkpatrick",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "twitter": "*",
+    "socket.io": "*"
+  }
+}
