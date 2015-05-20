@@ -32,8 +32,8 @@ io.sockets.on('connection', function(socket) {
     if (stream === null) {
       //Connect to twitter stream passing in filter for Wellington.
       twit.stream('statuses/filter', {
-        'locations': '174.70414, -41.35505, 174.85245, -41.19714'
-          // 'track': 'the'
+        //'locations': '174.70414, -41.35505, 174.85245, -41.19714'
+        'track': 'the'
       }, function(stream) {
         stream.on('data', function(tweet) {
           // socket.broadcast.emit("twitter-stream", outputPoint});
