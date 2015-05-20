@@ -1,2 +1,20 @@
 body { background-color: #000000; margin: 0px; overflow: hidden; }
 #info { position: absolute; top: 0px; width: 100%; color: #00b0b0; padding: 5px; font-family:Monospace; font-size:13px; text-align:center; }
+
+.heroText {
+  position:absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 33vh;
+  text-align: center;
+  color: rgba(256,256,256, 0.05);
+  font-size: 35vw;
+  position:relative;
+  background: rgba(0,0,0, 0);
+}
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+}
