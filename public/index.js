@@ -18,5 +18,5 @@ $(document).ready(function() {
     });
   }
 
-  // $('.heroText').fitText();
+  $('.heroText').fitText(0.55);
 });
