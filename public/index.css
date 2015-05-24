@@ -30,6 +30,14 @@ body {
   height: 33%;
 }
 
+.trackDiv {
+  position:relative;
+  text-align: center;
+  z-index: 20;
+  margin: 0;
+  color: rgba(256,256,256, 0.35);
+}
+
 .heroText {
   position:relative;
   text-align: center;
