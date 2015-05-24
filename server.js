@@ -15,7 +15,7 @@ var twit = new twitter({
   }),
   stream = null;
 
-console.log('node server running.')
+console.log('node server running, "localhost:8081"')
 
 //Use the default port (for beanstalk) or default to 8081 locally
 server.listen(process.env.PORT || 8081);
