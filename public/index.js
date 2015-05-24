@@ -5,7 +5,7 @@ $(document).ready(function() {
   console.log("ready to rock!");
 
   if (io !== undefined) {
-    var socket = io.connect('http://localhost:8081/');
+    var socket = io.connect(window.location.hostname);
 
     socket.on('precipitate', function(data) {
       console.log(data);
