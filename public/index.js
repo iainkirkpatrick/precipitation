@@ -5,7 +5,7 @@ $(document).ready(function() {
   console.log("ready to rock!");
 
   if (io !== undefined) {
-    var socket = io.connect(window.location.hostname);
+    var socket = io.connect();
 
     socket.on('precipitate', function(data) {
       console.log(data);
@@ -17,4 +17,6 @@ $(document).ready(function() {
       socket.emit("start precipitation")
     });
   }
+
+  // $('.heroText').fitText();
 });
