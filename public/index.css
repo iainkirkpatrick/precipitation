@@ -31,9 +31,11 @@ body {
 }
 
 .trackDiv {
-  position:relative;
-  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 5%;
   z-index: 20;
+  text-align: center;
   margin: 0;
   color: rgba(256,256,256, 0.35);
 }
@@ -43,8 +45,14 @@ body {
   text-align: center;
   z-index: 10;
   margin: 0;
-  color: rgba(256,256,256, 0.15);
+  color: rgba(256,256,256, 0.10);
   /*background: rgba(0,0,0, 0);*/
+}
+
+.trackText {
+  font-style: italic;
+  margin: 0;
+  margin-top: -25px;
 }
 
 canvas {
