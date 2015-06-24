@@ -8,10 +8,14 @@ var twitter = require('twitter'),
 
 //Setup twitter stream api
 var twit = new twitter({
-    consumer_key: process.env.twitterConsumerKey,
-    consumer_secret: process.env.twitterConsumerSecret,
-    access_token_key: process.env.twitterTokenKey,
-    access_token_secret: process.env.twitterTokenSecret
+    // consumer_key: process.env.twitterConsumerKey,
+    // consumer_secret: process.env.twitterConsumerSecret,
+    // access_token_key: process.env.twitterTokenKey,
+    // access_token_secret: process.env.twitterTokenSecret
+    consumer_key: 'b3nYDw97IzrsLceveyVh5TdhS',
+    consumer_secret: 'nIiBGOaTMVjDLknQR7OqTFjokDKcOT31CvGoM5zgP8B1FvbmVN',
+    access_token_key: '40796586-LqYvnVifIvwZAmyXEXoXE8C2SwEkxrKZ8w5C111F7',
+    access_token_secret: 'm95MDjBGq57ZHXjvofVf0Hl2di7m3q09BKJakTNbm6XVN'
   }),
   stream = null;
 
@@ -27,16 +31,16 @@ app.use(express.static(__dirname + '/public'));
 io.sockets.on('connection', function(socket) {
 
   //Code to run when socket.io is setup.
-  socket.on("start precipitation", function() {
+  socket.on("start precipitation", function(text) {
+    console.log("it's raining " + text);
 
     if (stream === null) {
-      //Connect to twitter stream passing in filter for Wellington.
       twit.stream('statuses/filter', {
         //'locations': '174.70414, -41.35505, 174.85245, -41.19714'
-        'track': 'code'
+        'track': text
       }, function(stream) {
         stream.on('data', function(tweet) {
-          socket.broadcast.emit("precipitate", tweet);
+          socket.emit("precipitate", tweet);
 
           //Send out to web sockets channel.
           socket.emit('precipitate', tweet);
